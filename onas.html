@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Благотворительность</title>
+    <style>
+        body {
+            font-family: Arial Narrow, sans-serif;
+            letter-spacing: .0.5rem;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Черный фон для всего экрана */
+            color: #2b2929; /* Белый цвет текста */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(135deg, #262525, #d7d7d7);
+            color: #0d0c0c;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-family: 'Impact', fantasy;
+            font-size: 4.5em;
+            margin: 0;
+            letter-spacing: .2rem;
+        }
+        header h1 a {
+            color: #0d0c0c; /* Черный цвет текста ссылки */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+        header nav ul {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #0d0c0c; /* Черный цвет текста ссылок */
+            text-decoration: none;
+        }
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero {
+            background-color: #dcdcdc;
+            width: 100%;
+            padding: 2em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        .hero h1 {
+            color: black;
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .container {
+            display: flex;
+            gap: 2%;
+            align-items: flex-start;
+            width: 100%;
+            background-color: #1c1c1c; /* Серый фон только для части экрана, не имеющей черного цвета */
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+        .text {
+            flex: 1;
+            min-width: 50%;
+            text-align: left;
+            padding-right: 20px;
+        }
+        .images {
+            display: flex;
+            gap: 2%;
+            width: 100%;
+            justify-content: space-between; /* Размещаем изображения слева и справа */
+            margin-top: 1em; /* Добавляем отступ сверху между текстом и изображениями */
+        }
+        .images img {
+            width: calc(50% - 1%); /* Уменьшаем на 1% для учета gap */
+            height: auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #262525; /* Черный фон для подвала */
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 2em;
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            padding: 1em 0;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 0 1em;
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .text, .images {
+                min-width: 100%;
+            }
+            .footer-column {
+                flex: 1 1 100%;
+                margin: 1em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1><a href="сайт(попытка1).html">BROKE LIVES MATTER</a></h1>
+        <nav>
+            <ul>
+                <li><a href="onas.html">О НАС</a></li>
+                <li><a href="proekty.html">ПРОЕКТЫ</a></li>
+                <li><a href="pozertvovat.html">ПОЖЕРТВОВАТЬ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Наша благотворительная организация стремится сделать мир лучше, помогая тем, кто оказался в трудной жизненной ситуации. Мы верим, что каждый человек заслуживает шанс на достойную жизнь, и работаем над тем, чтобы предоставить этот шанс всем нуждающимся.</h1>
+            <p>Основные направления нашей деятельности включают:</p>
+            <ul>
+                <li><strong>Помощь малообеспеченным семьям и одиноким людям:</strong> Мы предоставляем финансовую и материальную поддержку тем, кто не в состоянии обеспечить себе базовые потребности, такие как еда, одежда и жилье.</li>
+                <li><strong>Поддержка детей-сирот и детей из неблагополучных семей:</strong> Мы организуем программы для детей, которые включают обучение, воспитание и досуг. Наша цель - дать детям шанс на светлое будущее и помочь им развить свои таланты и способности.</li>
+                <li><strong>Медицинская помощь:</strong> Мы помогаем больным людям получить необходимое лечение и медицинскую помощь. Мы сотрудничаем с медицинскими учреждениями и врачами, чтобы обеспечить качественное лечение и уход.</li>
+                <li><strong>Поддержка людей с ограниченными возможностями:</strong> Мы создаем условия для интеграции людей с инвалидностью в общество, предоставляем специализированное оборудование и организуем мероприятия, которые помогают таким людям чувствовать себя полноценными членами общества.</li>
+                <li><strong>Социальная адаптация и реабилитация:</strong> Мы проводим программы, направленные на социальную адаптацию людей, оказавшихся в сложных жизненных ситуациях. Наша задача - помочь им найти работу, получить образование и вернуться к нормальной жизни.</li>
+                <li><strong>Экологические проекты:</strong> Мы реализуем проекты, направленные на защиту окружающей среды и улучшение экологической ситуации в нашем регионе. Мы верим, что забота о природе - это забота о будущем поколении.</li>
+            </ul>
+            <p><strong>Наши Ценности:</strong></p>
+            <ul>
+                <li><strong>Сострадание:</strong> Мы понимаем и сочувствуем трудностям других людей, и готовы помочь каждому нуждающемуся.</li>
+                <li><strong>Прозрачность:</strong> Мы ведем нашу деятельность открыто и честно, обеспечивая прозрачность всех процессов и отчетность перед нашими благотворителями и общественностью.</li>
+                <li><strong>Эффективность:</strong> Мы стремимся к результатам и уверены в эффективности наших программ и проектов.</li>
+                <li><strong>Сотрудничество:</strong> Мы ценим партнерские отношения и сотрудничество с другими организациями и людьми, разделяющими наши ценности и цели.</li>
+            </ul>
+        </div>
+        <section class="container">
+            <div class="images">
+                <img src="bedny3.jpg" alt="Изображение 1">
+                <img src="bedny4.jpg" alt="Изображение 2">
+            </div>
+        </section>
+    </main>
+    <footer>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p>Email: info@brokeLM.com<br>Телефон: +7 123 456 7890</p>
+            </div>
+
+        <p>&copy; 2024 BROKE LIVES MATTER. Все права защищены.</p>
+    </footer>
+</body>
+</html>

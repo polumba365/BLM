@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Благотворительность</title>
+    <style>
+        body {
+            font-family: Arial Narrow, sans-serif;
+            letter-spacing: 0.05rem;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Черный фон для всего экрана */
+            color: #2b2929; /* Белый цвет текста */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(135deg, #262525, #d7d7d7);
+            color: #0d0c0c;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-family: 'Impact', fantasy;
+            font-size: 4.5em;
+            margin: 0;
+            letter-spacing: .2rem;
+        }
+        header h1 a {
+            color: #0d0c0c; /* Черный цвет текста ссылки */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+        header nav ul {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #0d0c0c; /* Черный цвет текста ссылок */
+            text-decoration: none;
+        }
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333; /* Светлый цвет текста в основной части */
+        }
+        .hero {
+            background-color: #dcdcdc;
+            width: 100%;
+            padding: 2em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        .hero h1 {
+            color: rgb(102, 100, 100);
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .container {
+            display: flex;
+            gap: 2%;
+            align-items: flex-start;
+            width: 100%;
+            background-color: #1c1c1c; /* Серый фон только для части экрана, не имеющей черного цвета */
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+        .text {
+            flex: 1;
+            min-width: 50%;
+            text-align: left;
+            padding-right: 20px;
+        }
+        .project {
+            background-color: #dcdcdc;
+            margin-bottom: 2em;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project h2 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+        .project p {
+            line-height: 1.6;
+        }
+        .project img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-top: 1em;
+            border-radius: 5px;
+            box-shadow: none; /* Убираем тень у изображений в проектах */
+        }
+        .donate {
+            background-color: #f4f4f4;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 2em;
+            text-align: center;
+        }
+        .donate h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        .donate form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .donate label {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .donate input, .donate select, .donate button {
+            font-size: 1em;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .donate button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .donate button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #262525; /* Черный фон для подвала */
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 2em;
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            padding: 1em 0;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 0 1em;
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .text, .images {
+                min-width: 100%;
+            }
+            .footer-column {
+                flex: 1 1 100%;
+                margin: 1em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="сайт(попытка1).html">BROKE LIVES MATTER</a></h1>
+        <nav>
+            <ul>
+                <li><a href="onas.html">О НАС</a></li>
+                <li><a href="proekty.html">ПРОЕКТЫ</a></li>
+                <li><a href="pozertvovat.html">ПОЖЕРТВОВАТЬ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Пожертвования</h1>
+            <p>Ваша поддержка помогает нам помогать другим. Присоединяйтесь к нам и сделайте пожертвование сегодня.</p>
+        <div class="donate">
+            <h2>Сделать пожертвование</h2>
+            <form action="https://example.com/donate" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="amount">Сумма пожертвования:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="project">Выберите проект:</label>
+                <select id="project" name="project" required>
+                    <option value="family-crisis">Поддержка семей в кризисе</option>
+                    <option value="education-for-all">Образование для всех</option>
+                    <option value="medical-aid">Медицинская помощь нуждающимся</option>
+                </select>
+                <button type="submit">Пожертвовать</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p>Email: info@brokeLM.com<br>Телефон: +7 123 456 7890</p>
+        </div>
+        <p>&copy; 2024 BROKE LIVES MATTER. Все права защищены.</p>
+    </footer>
+</body>
+</html>

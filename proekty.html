@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Благотворительность</title>
+    <style>
+        body {
+            font-family: Arial Narrow, sans-serif;
+            letter-spacing: .0.5rem;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Черный фон для всего экрана */
+            color: #2b2929; /* Белый цвет текста */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(135deg, #262525, #d7d7d7);
+            color: #0d0c0c;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-family: 'Impact', fantasy;
+            font-size: 4.5em;
+            margin: 0;
+            letter-spacing: .2rem;
+        }
+        header h1 a {
+            color: #0d0c0c; /* Черный цвет текста ссылки */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+        header nav ul {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #0d0c0c; /* Черный цвет текста ссылок */
+            text-decoration: none;
+        }
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333; /* Светлый цвет текста в основной части */
+        }
+        .hero {
+            background-color: #dcdcdc;
+            width: 100%;
+            padding: 2em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        .hero h1 {
+            color: rgb(102, 100, 100);
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .container {
+            display: flex;
+            gap: 2%;
+            align-items: flex-start;
+            width: 100%;
+            background-color: #1c1c1c; /* Серый фон только для части экрана, не имеющей черного цвета */
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+        .text {
+            flex: 1;
+            min-width: 50%;
+            text-align: left;
+            padding-right: 20px;
+        }
+        .project {
+            background-color: #dcdcdc;
+            margin-bottom: 2em;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project h2 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+        .project p {
+            line-height: 1.6;
+        }
+        .project img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-top: 1em;
+            border-radius: 5px;
+            box-shadow: none; /* Убираем тень у изображений в проектах */
+        }
+        footer {
+            background-color: #262525; /* Черный фон для подвала */
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 2em;
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            padding: 1em 0;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 0 1em;
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .text, .images {
+                min-width: 100%;
+            }
+            .footer-column {
+                flex: 1 1 100%;
+                margin: 1em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="сайт(попытка1).html">BROKE LIVES MATTER</a></h1>
+        <nav>
+            <ul>
+                <li><a href="onas.html">О НАС</a></li>
+                <li><a href="proekty.html">ПРОЕКТЫ</a></li>
+                <li><a href="pozertvovat.html">ПОЖЕРТВОВАТЬ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="project">
+            <h2>Проект "Поддержка семей в кризисе"</h2>
+            <p>Наша организация предоставляет помощь семьям, оказавшимся в трудной жизненной ситуации. Мы предоставляем финансовую поддержку, необходимые ресурсы и консультации, чтобы помочь семьям стабилизировать свое положение.</p>
+            <img src="family-crisis.jpg" alt="Поддержка семей в кризисе">
+        </div>
+        <div class="project">
+            <h2>Проект "Образование для всех"</h2>
+            <p>Наша цель - обеспечить доступ к качественному образованию детям из малообеспеченных семей. Мы организуем бесплатные занятия, предоставляем учебные материалы и поддерживаем детей в их учебных достижениях.</p>
+            <img src="education-for-all.jpg" alt="Образование для всех">
+        </div>
+        <div class="project">
+            <h2>Проект "Медицинская помощь нуждающимся"</h2>
+            <p>Мы оказываем медицинскую помощь людям без возможности оплатить лечение. Наша организация работает с врачами и медицинскими учреждениями для предоставления необходимой медицинской помощи и лекарств.</p>
+            <img src="medical-aid.jpg" alt="Медицинская помощь нуждающимся">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p>Email: info@brokeLM.com<br>Телефон: +7 123 456 7890</p>
+        </div>
+        <p>&copy; 2024 BROKE LIVES MATTER. Все права защищены.</p>
+    </footer>
+</body>
+</html>
